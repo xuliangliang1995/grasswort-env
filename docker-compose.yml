@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  qluan:
+    image: registry.cn-beijing.aliyuncs.com/qluan/qluan_001_test:latest
+    container_name: qluan
+    ports:
+      - 8088:8080

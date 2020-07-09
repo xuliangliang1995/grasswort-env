@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  zeebe:
+    image: camunda/zeebe:latest
+    container_name: zeebe
+    ports:
+      - 26500:26500
+      - 26501:26501
+      - 26502:26502
+    volumes:
+      - "~/grasswort-env/docker-volumes/zeebe/data:/usr/local/zeebe/data"
+
+
